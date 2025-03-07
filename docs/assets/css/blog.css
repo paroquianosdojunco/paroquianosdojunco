@@ -1,26 +1,30 @@
         /* Estilos gerais */
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #cacde0;
+            background-color: #6c757d;
         }
 
         /* Cabeçalho da página */
         h1 {
-            color: #2d3436; /* Cinza escuro para o título principal */
+            color: #2d3436;
+            /* Cinza escuro para o título principal */
             font-weight: 700;
             margin-bottom: 2rem;
             text-align: center;
             padding-bottom: 1rem;
-            border-bottom: 3px solid #34495e; /* Cor mais suave para a borda */
+            border-bottom: 3px solid #34495e;
+            /* Cor mais suave para a borda */
         }
 
         /* Cards dos posts */
+        /* Cards dos posts */
         .card {
-            background-color:#e0bd1e
-            border: 1px solid #dee2e6; /
+            background-color: #e0bd1e;
+            border: 1px solid #dee2e6;
             box-shadow: none;
             transition: transform 0.3s ease;
-            height: auto; /* Permite que o card se ajuste ao conteúdo */
+            height: auto;
+            /* Permite que o card se ajuste ao conteúdo */
         }
 
         .card:hover {
@@ -29,20 +33,25 @@
         }
 
         .card-body {
-            background-color: rgb(199, 199, 218); /* Fundo do card */
+            background-color: rgb(199, 199, 218);
+            /* Fundo do card */
             padding: 1.5rem;
             display: flex;
             flex-direction: column;
-            align-items: flex-start; /* Alinha conteúdo à esquerda */
+            align-items: flex-start;
+            /* Alinha conteúdo à esquerda */
         }
 
         .card-title {
             font-size: 1.4rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
-            color: #2d3436; /* Cinza escuro para títulos */
-            width: 100%; /* Garante que o título ocupe toda a largura */
-            text-align: left; /* Alinha texto à esquerda */
+            color: #2d3436;
+            /* Cinza escuro para títulos */
+            width: 100%;
+            /* Garante que o título ocupe toda a largura */
+            text-align: left;
+            /* Alinha texto à esquerda */
         }
 
         .card-title a {
@@ -60,8 +69,10 @@
             width: 100%;
             height: auto;
             max-height: 250px;
-            object-fit: contain; /* Garante que a imagem inteira seja exibida */
-            background-color:rgb(199, 199, 218); /* Azul escuro para fundo da imagem */
+            object-fit: contain;
+            /* Garante que a imagem inteira seja exibida */
+            background-color: rgb(199, 199, 218);
+            /* Azul escuro para fundo da imagem */
             border-radius: 4px;
             margin: 1rem 0;
             transition: opacity 0.3s ease;
@@ -86,15 +97,19 @@
             font-size: 0.9rem;
             font-weight: 500;
             margin-bottom: 1rem;
-            width: 100%; /* Garante que a data ocupe toda a largura */
-            text-align: left; /* Alinha texto à esquerda */
+            width: 100%;
+            /* Garante que a data ocupe toda a largura */
+            text-align: left;
+            /* Alinha texto à esquerda */
         }
 
         /* Texto dos posts */
         .card-text {
-            color: #4a4a4a; /* Cinza médio para texto */
+            color: #4a4a4a;
+            /* Cinza médio para texto */
             line-height: 1.6;
-            width: 100%; /* Garante que o texto ocupe toda a largura */
+            width: 100%;
+            /* Garante que o texto ocupe toda a largura */
             text-align: justify;
             margin-top: 1rem;
         }
@@ -121,17 +136,20 @@
         /* Estilo para a logo no header */
         .logo {
             width: auto;
-            height: 60px; /* Aumentado de 40px para 60px */
+            height: 60px;
+            /* Aumentado de 40px para 60px */
             margin-right: 15px;
             transition: transform 0.3s ease;
         }
 
         .logo:hover {
-            transform: scale(1.05); /* Efeito sutil de hover */
+            transform: scale(1.05);
+            /* Efeito sutil de hover */
         }
 
         .logo-title {
-            font-size: 1.4rem; /* Aumentado de 1.2rem para 1.4rem */
+            font-size: 1.4rem;
+            /* Aumentado de 1.2rem para 1.4rem */
             margin-left: 15px;
             font-weight: 600;
             color: #fff;
@@ -158,9 +176,10 @@
             }
 
             .logo {
-                height: 45px; /* Aumentado de 30px para 45px em dispositivos móveis */
+                height: 45px;
+                /* Aumentado de 30px para 45px em dispositivos móveis */
             }
-            
+
             .logo-title {
                 font-size: 1.2rem;
             }
