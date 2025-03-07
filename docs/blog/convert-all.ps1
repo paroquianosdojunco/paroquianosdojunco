@@ -39,8 +39,8 @@ foreach ($file in $files) {
     $fileNameWithoutExt = [System.IO.Path]::GetFileNameWithoutExtension($file.Name)
     $outputFile = Join-Path -Path $outputDir -ChildPath "$fileNameWithoutExt.html"
 
-    # Executar o comando Pandoc
-    pandoc $file.FullName --template $templatePath -o $outputFile
+    # Executar o comando Pandoc com o novo parâmetro --shift-heading-level-by
+    pandoc $file.FullName --template $templatePath --shift-heading-level-by=1 -o $outputFile
 
     # Verificar se o arquivo foi criado
     if (-Not (Test-Path $outputFile)) {
