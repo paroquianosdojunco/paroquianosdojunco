@@ -1,0 +1,104 @@
+/* Estilização Geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.logo-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+/* Rodapé do Post */
+.post-footer {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Rodapé Global */
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+/* Estilo para imagens responsivas */
+img {
+    max-width: 100%; /* Garante que a imagem nunca ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços em branco abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    border-radius: 8px; /* Arredonda as bordas (opcional) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave (opcional) */
+}
+
+/* Estilo específico para figuras */
+figure {
+    margin: 20px 0; /* Adiciona espaço ao redor da figura */
+    text-align: center; /* Centraliza a legenda e a imagem */
+}
+
+figcaption {
+    font-size: 0.9rem; /* Tamanho menor para a legenda */
+    color: #666; /* Cor mais suave para a legenda */
+    margin-top: 10px; /* Espaço entre a imagem e a legenda */
+}
+
+/* Regra específica para desktop: Limita o tamanho máximo da imagem */
+@media (min-width: 768px) {
+    img {
+        max-width: 350px; /* Define um tamanho máximo para a imagem em telas grandes */
+    }
+}

@@ -1,0 +1,171 @@
+/* ==============================
+   Estilização de fontes
+   ============================== */
+
+.estilo-main {
+  font-family: 'adobe-caslon-pro', serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2em; /* Tamanho base */
+
+  /* Estilos para cabeçalhos */
+  h1 { font-size: 2.5em; } /* Exemplo de tamanho para h1 */
+  h2 { font-size: 2em; }   /* Exemplo de tamanho para h2 */
+  h3 { font-size: 1.8em; } /* Exemplo de tamanho para h3 */
+  h4 { font-size: 1.5em; } /* Exemplo de tamanho para h4 */
+  h5 { font-size: 1.3em; } /* Exemplo de tamanho para h5 */
+  h6 { font-size: 1.2em; } /* Exemplo de tamanho para h6 */
+
+  /* Cor para todos os cabeçalhos */
+  h1, h2, h3, h4, h5, h6 {
+    color: #1c267a;
+  }
+}
+
+
+
+
+
+
+
+
+/* ==============================
+   Layout Geral (Container)
+   ============================== */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+  gap: 1rem; /* Espaçamento entre aside e main */
+  margin-top: 0.5rem; /* Espaçamento superior */
+}
+
+/* ==============================
+   Estilo do Aside
+   ============================== */
+.estilo-aside {
+  background-color: #c3ccd3; /* Cor de fundo */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  flex: 0 0 28%; /* Largura fixa de 28% em desktop */
+  max-height: 80vh; /* Altura máxima para evitar overflow */
+  overflow-y: auto; /* Adiciona barra de rolagem nativa */
+}
+
+.toc-list {
+  list-style-type: none; /* Remove marcadores padrão */
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc-list li {
+  margin-bottom: 0.5rem;
+}
+
+.toc-list ul {
+  display: none; /* Sublistas inicialmente ocultas */
+  margin-left: 1rem; /* Indentação para sublistas */
+}
+
+.toc-list .expanded > ul {
+  display: block; /* Mostra sublistas quando o título está expandido */
+}
+
+/* Estilo dos botões de expandir/recolher */
+.toc-list .expand-button {
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+/* Estilo dos links dos subtítulos */
+.toc-list a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.toc-list a:hover {
+  color: #0056b3;
+}
+
+/* ==============================
+     Estilo do Main
+     ============================== */
+.estilo-main {
+  background-color: #c3ccd3; /* Vermelho escuro */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  flex: 0 0 70%; /* Largura fixa de 70% em desktop */
+  transition: all 0.3s ease; /* Transição suave ao redimensionar */
+}
+
+/* ==============================
+     Responsividade: Altera o layout para mobile
+     ============================== */
+@media (max-width: 992px) {
+  .estilo-aside,
+  .estilo-main {
+    flex: 0 0 100%; /* Ocupa 100% da largura */
+    max-width: 100%;
+  }
+
+  .estilo-aside {
+    order: -1; /* Move o aside para cima do main */
+    margin-bottom: 1.5rem; /* Adiciona espaço abaixo do aside */
+    position: static; /* Remove o sticky em telas pequenas */
+  }
+}
+
+/* ==============================
+     Melhorias de Espaçamento em Telas Muito Pequenas
+     ============================== */
+@media (max-width: 576px) {
+  .container {
+    gap: 1rem; /* Reduz o espaçamento entre os elementos */
+  }
+
+  .estilo-aside,
+  .estilo-main {
+    padding: 0.75rem; /* Menos padding em telas muito pequenas */
+    border-radius: 8px; /* Bordas menos arredondadas */
+  }
+}
+
+/* ==============================
+  /* Estilo para o item ativo no Sumário */
+
+#TOC a.active {
+  font-weight: bold;
+  color: #c4600e; /* Cor diferente para o item ativo */
+}
+
+/* ==============================
+   Estilo do Cabeçalho do Sumário
+   ============================== */
+.toc-header {
+  display: flex;
+  justify-content: space-between; /* Alinha o título e o botão */
+  align-items: center; /* Centraliza verticalmente */
+  margin-bottom: 1rem; /* Espaçamento abaixo do cabeçalho */
+}
+
+.toc-header span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#toggle-toc {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#toggle-toc:hover {
+  background-color: #f8f9fa; /* Fundo claro ao passar o mouse */
+}

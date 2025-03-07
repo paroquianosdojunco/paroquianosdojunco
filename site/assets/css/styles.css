@@ -1,0 +1,130 @@
+/* Estilo do header */
+header.navbar {
+  min-height: 16vh; /* Define uma altura mínima */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  background-color: #333; /* Fundo escuro para combinar com o carrossel */
+  color: #fff;
+  position: relative; /* Permite sobreposição de elementos */
+  z-index: 10; /* Garante que o header fique acima do carrossel */
+}
+
+.navbar-toggler {
+  margin-left: auto; /* Empurra o botão para a direita */
+  order: 1; /* Garante que o botão fique após o logo */
+}
+
+.navbar-brand {
+  order: 0; /* Mantém o logo à esquerda */
+}
+
+.logo {
+  max-height: 4.5em; /* Altura máxima do logo */
+  width: auto; /* Mantém a proporção */
+}
+
+/* Estilo personalizado para o título */
+.logo-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 10px;
+}
+
+/* Estilo do contêiner do carrossel */
+.carousel-container {
+  margin-top: -16vh; /* Move o carrossel para cima, encobrindo o espaço em branco */
+  position: relative;
+  z-index: 5; /* Garante que o carrossel fique abaixo do header */
+}
+
+/* Estilo do carrossel */
+.carousel {
+  background-color: #333; /* Fundo escuro para destacar as imagens */
+  padding: 20px 0; /* Espaçamento interno */
+  margin-top: 0; /* Remove espaçamento superior */
+  margin-bottom: 40px; /* Espaçamento abaixo do carrossel */
+}
+
+/* Estilo das imagens do carrossel */
+.carousel-item img {
+  width: 60%; /* Largura padrão das imagens */
+  height: auto; /* Altura proporcional */
+  max-height: 500px; /* Altura máxima ajustada */
+  margin: 0 auto; /* Centraliza a imagem */
+  display: block; /* Garante que a imagem seja tratada como um bloco */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+.carousel-item img:hover {
+  transform: scale(1.03); /* Efeito de ampliação ao passar o mouse */
+}
+
+/* Estilo para títulos de seções */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para caixas de destaque */
+.highlight-box {
+  background-color: #c2cbcc;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.highlight-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+
+/* Estilos do aside
+/* Estilo para o aside */
+aside {
+  background-color: #f9f9f9; /* Fundo claro */
+  border: 1px solid #ddd; /* Borda sutil */
+  padding: 1rem; /* Espaçamento interno */
+  margin: 1rem 0; /* Espaçamento externo */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para o sumário dentro do aside */
+nav#TOC {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+nav#TOC h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333; /* Cor do título */
+}
+
+nav#TOC ul {
+  list-style-type: none; /* Remove marcadores padrão */
+  padding-left: 1rem; /* Recuo para itens da lista */
+}
+
+nav#TOC li {
+  margin-bottom: 0.5rem; /* Espaçamento entre itens */
+}
+
+
+/* Responsividade: Ajuste para telas menores */
+@media (max-width: 768px) {
+  .carousel-item img {
+    width: 98%; /* Largura ajustada para telas menores */
+    max-height: none; /* Remove a altura máxima para evitar distorções */
+  }
+  .section-title {
+    font-size: 1.5rem; /* Reduz o tamanho do título em telas menores */
+  }
+}

@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+comandos.txt
+x-generator-quaresma.py
+x-generator.py
